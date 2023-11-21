@@ -546,7 +546,7 @@
 </p>
 <p>In the log, many warnings of &quot;The operation has timed out.&quot; are visible. To solve this problem, on the suggestion of Devolutions support, I added the following line to the script:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">Set-RDMDatasourceProperty</span> <span class="n">-DataSource</span> <span class="nv">$ds</span> <span class="n">-Property</span> <span class="s2">&#34;Timeout&#34;</span> <span class="n">-Value</span> <span class="mf">60</span>
-</span></span></code></pre></div><p>However, this did not resolve the issue with the warnings. Nonetheless, despite the warnings, the script functions correctly, and we find our entry within RDM. Unfortunately, the documentation for the Devolutions PowerShell module is unclear, and since I don't have much time and it works, for now, I'm simply ignoring the warning.</p>
+</span></span></code></pre></div><p>However, this did not resolve the issue with the warnings. Nonetheless, despite the warnings, the script functions correctly, and we find our entry within RDM. Unfortunately, I couldn't find useful documentation regarding the Devolutions PowerShell module, and since I don't have much time and it works, for now, I'm simply ignoring the warning.</p>
 <p><figure>
   <picture>
 
