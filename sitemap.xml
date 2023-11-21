@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.immiblogghenicloud.cloud/usefull-links/</loc>
+    <lastmod>2023-11-21T11:13:42+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/posts/adding-new-deployed-vm-to-devlutions-rdm/</loc>
+    <lastmod>2023-11-13T12:56:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/</loc>
+    <lastmod>2023-11-13T12:56:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/posts/</loc>
+    <lastmod>2023-11-13T12:56:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/tags/powershell/</loc>
+    <lastmod>2023-11-13T12:56:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/tags/rdm/</loc>
+    <lastmod>2023-11-13T12:56:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/tags/</loc>
+    <lastmod>2023-11-13T12:56:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/tags/vra/</loc>
+    <lastmod>2023-11-13T12:56:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/tags/vro/</loc>
+    <lastmod>2023-11-13T12:56:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.immiblogghenicloud.cloud/categories/</loc>
     <lastmod>2023-11-07T12:27:36+01:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -12,27 +57,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/</loc>
-    <lastmod>2023-11-07T12:27:36+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/posts/</loc>
-    <lastmod>2023-11-07T12:27:36+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.immiblogghenicloud.cloud/tags/sccm/</loc>
     <lastmod>2023-11-07T12:27:36+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.immiblogghenicloud.cloud/categories/sccm/</loc>
-    <lastmod>2023-11-07T12:27:36+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/tags/</loc>
     <lastmod>2023-11-07T12:27:36+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

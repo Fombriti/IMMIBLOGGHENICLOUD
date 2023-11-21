@@ -16,6 +16,10 @@
       <description>
         
           
+            Remote Desktop Manager is a fantastic tool for centralized management of various accesses to VMs and services. I have personally always used RDM to save the RDP and SSH connections that I most frequently used.
+This tool, when used in conjunction with Devolutions Server (DVLS), is excellent for teams that need a centralized and common repository for access.
+Recently, I found myself in need of automating the creation of entries within the various Vaults inside DVLS to reduce the effort caused by adding them manually.
+          
           
         
       </description>
