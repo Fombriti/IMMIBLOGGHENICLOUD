@@ -6,18 +6,19 @@
     <description>Recent content in sccm on IMMIBLOGGHENICLOUD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Nov 2023 12:27:36 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/categories/sccm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 12:56:25 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/categories/sccm/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>HelloWorld sccm</title>
-      <link>https://www.immiblogghenicloud.cloud/posts/sccm/helloworldsccm/</link>
-      <pubDate>Tue, 07 Nov 2023 12:27:36 +0100</pubDate>
+      <title>Adding New Deployed Vm to Devolutions RDM</title>
+      <link>https://www.immiblogghenicloud.cloud/posts/adding-new-deployed-vm-to-devolutions-rdm/</link>
+      <pubDate>Mon, 13 Nov 2023 12:56:25 +0100</pubDate>
       
-      <guid>https://www.immiblogghenicloud.cloud/posts/sccm/helloworldsccm/</guid>
+      <guid>https://www.immiblogghenicloud.cloud/posts/adding-new-deployed-vm-to-devolutions-rdm/</guid>
       <description>
         
           
-            Hello world sccm aaa a
-🤠
+            Remote Desktop Manager is a fantastic tool for centralized management of various accesses to VMs and services. I have personally always used RDM to save the RDP and SSH connections that I most frequently used.
+This tool, when used in conjunction with Devolutions Server (DVLS), is excellent for teams that need a centralized and common repository for access.
+Recently, I found myself in need of automating the creation of entries within the various Vaults inside DVLS to reduce the effort caused by adding them manually.
           
           
         

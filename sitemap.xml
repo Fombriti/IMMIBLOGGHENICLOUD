@@ -7,7 +7,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/posts/adding-new-deployed-vm-to-devolutions-rdm/</loc>
+    <loc>https://www.immiblogghenicloud.cloud/posts/add-a-connection-entry-to-rdm-vault-on-new-vm-deployment/</loc>
+    <lastmod>2023-11-13T12:56:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/categories/</loc>
     <lastmod>2023-11-13T12:56:25+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -37,6 +42,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/categories/vmware/</loc>
+    <lastmod>2023-11-13T12:56:25+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.immiblogghenicloud.cloud/tags/vra/</loc>
     <lastmod>2023-11-13T12:56:25+01:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -47,38 +57,8 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/categories/</loc>
-    <lastmod>2023-11-07T12:27:36+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/posts/sccm/helloworldsccm/</loc>
-    <lastmod>2023-11-07T12:27:36+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/tags/sccm/</loc>
-    <lastmod>2023-11-07T12:27:36+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/categories/sccm/</loc>
-    <lastmod>2023-11-07T12:27:36+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/tags/test/</loc>
-    <lastmod>2023-11-07T12:27:36+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.immiblogghenicloud.cloud/about/</loc>
     <lastmod>2023-11-03T14:18:20+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/posts/helloworld/</loc>
-    <lastmod>2023-11-03T12:27:36+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
