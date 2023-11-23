@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SCCM on IMMIBLOGGHENICLOUD</title>
-    <link>https://www.immiblogghenicloud.cloud/tags/sccm/</link>
-    <description>Recent content in SCCM on IMMIBLOGGHENICLOUD</description>
+    <title>Microsoft on IMMIBLOGGHENICLOUD</title>
+    <link>https://www.immiblogghenicloud.cloud/categories/microsoft/</link>
+    <description>Recent content in Microsoft on IMMIBLOGGHENICLOUD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Nov 2023 10:38:37 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/tags/sccm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Nov 2023 10:38:37 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/categories/microsoft/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SCCM collections</title>
       <link>https://www.immiblogghenicloud.cloud/posts/sccm-collections/</link>

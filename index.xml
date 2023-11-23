@@ -6,7 +6,25 @@
     <description>Recent content on IMMIBLOGGHENICLOUD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Nov 2023 12:56:25 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Nov 2023 10:38:37 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SCCM collections</title>
+      <link>https://www.immiblogghenicloud.cloud/posts/sccm-collections/</link>
+      <pubDate>Thu, 23 Nov 2023 10:38:37 +0100</pubDate>
+      
+      <guid>https://www.immiblogghenicloud.cloud/posts/sccm-collections/</guid>
+      <description>
+        
+          
+            Intro These are various queries to populate the collections in SCCM, which will be updated in the future.
+Additionally, at the bottom, I have included a script for the automatic addition of the collections shown in this post
+Collections Collection Boundary Groups Based This query adds the devices that are part of a specific Boundary Group to the collection. It&#39;s necessary to modify the query by inserting the name of your own group.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Add a connection entry to RDM Vault on new vm deployment</title>
       <link>https://www.immiblogghenicloud.cloud/posts/add-a-connection-entry-to-rdm-vault-on-new-vm-deployment/</link>

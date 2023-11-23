@@ -6,19 +6,19 @@
     <description>Recent content in sccm on IMMIBLOGGHENICLOUD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Nov 2023 12:56:25 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/categories/sccm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Nov 2023 10:38:37 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/categories/sccm/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Adding New Deployed Vm to Devolutions RDM</title>
-      <link>https://www.immiblogghenicloud.cloud/posts/adding-new-deployed-vm-to-devolutions-rdm/</link>
-      <pubDate>Mon, 13 Nov 2023 12:56:25 +0100</pubDate>
+      <title>SCCM collections</title>
+      <link>https://www.immiblogghenicloud.cloud/posts/sccm-collections/</link>
+      <pubDate>Thu, 23 Nov 2023 10:38:37 +0100</pubDate>
       
-      <guid>https://www.immiblogghenicloud.cloud/posts/adding-new-deployed-vm-to-devolutions-rdm/</guid>
+      <guid>https://www.immiblogghenicloud.cloud/posts/sccm-collections/</guid>
       <description>
         
           
-            Remote Desktop Manager is a fantastic tool for centralized management of various accesses to VMs and services. I have personally always used RDM to save the RDP and SSH connections that I most frequently used.
-This tool, when used in conjunction with Devolutions Server (DVLS), is excellent for teams that need a centralized and common repository for access.
-Recently, I found myself in need of automating the creation of entries within the various Vaults inside DVLS to reduce the effort caused by adding them manually.
+            intro? bla bla bla...
+Collections Collection Boundary Groups Based Questa query aggiunge i dispositivi che fanno parte di un Boundary Group specifico alla collection:
+1select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System where SMS_R_System.ResourceId in (select resourceid from SMS_CollectionMemberClientBaselineStatus where SMS_CollectionMemberClientBaselineStatus.boundarygroups = &amp;#39;YOUR_BOUNDARY_GROUP_HERE&amp;#39;) and SMS_R_System.Name not in (&amp;#39;Unknown&amp;#39;) and SMS_R_System.Client = &amp;#39;1&amp;#39; 
           
           
         
