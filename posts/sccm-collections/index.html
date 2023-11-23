@@ -28,14 +28,14 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="List of usefull sccm collection qery and details" />
+<meta name="description" content="List of usefull sccm collection qery and details - MECM, SCCM, Software Center, Configuration Manager " />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
 <meta name="twitter:title" content="SCCM collections" />
 <meta name="twitter:image" content="https://www.immiblogghenicloud.cloud/"/>
 <meta property="og:url" content="https://www.immiblogghenicloud.cloud/posts/sccm-collections/" />
 <meta property="og:title" content="SCCM collections" />
-<meta property="og:description" content="List of usefull sccm collection qery and details" />
+<meta property="og:description" content="List of usefull sccm collection qery and details - MECM, SCCM, Software Center, Configuration Manager " />
 <meta property="og:image" content="https://www.immiblogghenicloud.cloud/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://www.immiblogghenicloud.cloud/icons/favicon.ico">
@@ -165,7 +165,7 @@
 </span>
     <span class="post_date">
       Nov 23, 2023</span>
-    <span class="post_time"> · 4 min read</span><span>&nbsp;· <a href='https://www.immiblogghenicloud.cloud/tags/powershell/' title="POWERSHELL" class="post_tag button button_translucent">POWERSHELL
+    <span class="post_time"> · 6 min read</span><span>&nbsp;· <a href='https://www.immiblogghenicloud.cloud/tags/powershell/' title="POWERSHELL" class="post_tag button button_translucent">POWERSHELL
         </a><a href='https://www.immiblogghenicloud.cloud/tags/sccm/' title="SCCM" class="post_tag button button_translucent">SCCM
         </a>
     </span>
@@ -293,22 +293,70 @@
 </span></span><span class="line"><span class="ln">10</span><span class="cl">        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;Windows Server 2019 Datacenter Based&#34;</span>
 </span></span><span class="line"><span class="ln">11</span><span class="cl">        <span class="n">Query</span> <span class="p">=</span> <span class="s2">&#34;select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.Version = &#39;10.0.17763&#39; and SMS_G_System_OPERATING_SYSTEM.Caption = &#39;Microsoft Windows Server 2019 Datacenter&#39;&#34;</span>
 </span></span><span class="line"><span class="ln">12</span><span class="cl">    <span class="p">},</span>
-</span></span><span class="line"><span class="ln">13</span><span class="cl">    <span class="c"># Add other collections here</span>
-</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="p">)</span>
-</span></span><span class="line"><span class="ln">15</span><span class="cl">
-</span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="c"># Creation of collections</span>
-</span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="k">foreach</span> <span class="p">(</span><span class="nv">$collection</span> <span class="k">in</span> <span class="nv">$collections</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln">18</span><span class="cl">    <span class="nv">$collectionName</span> <span class="p">=</span> <span class="nv">$collection</span><span class="p">.</span><span class="py">Name</span>
-</span></span><span class="line"><span class="ln">19</span><span class="cl">    <span class="nv">$collectionQuery</span> <span class="p">=</span> <span class="nv">$collection</span><span class="p">.</span><span class="py">Query</span>
-</span></span><span class="line"><span class="ln">20</span><span class="cl">
-</span></span><span class="line"><span class="ln">21</span><span class="cl">    <span class="c"># Create the collection</span>
-</span></span><span class="line"><span class="ln">22</span><span class="cl">    <span class="nv">$newCollection</span> <span class="p">=</span> <span class="nb">New-CMDeviceCollection</span> <span class="n">-Name</span> <span class="nv">$collectionName</span> <span class="n">-LimitingCollection</span> <span class="s2">&#34;All Systems&#34;</span>
-</span></span><span class="line"><span class="ln">23</span><span class="cl">
-</span></span><span class="line"><span class="ln">24</span><span class="cl">    <span class="c"># Add the query rule</span>
-</span></span><span class="line"><span class="ln">25</span><span class="cl">    <span class="nb">Add-CMDeviceCollectionQueryMembershipRule</span> <span class="n">-CollectionId</span> <span class="nv">$newCollection</span><span class="p">.</span><span class="py">CollectionID</span> <span class="n">-QueryExpression</span> <span class="nv">$collectionQuery</span> <span class="n">-RuleName</span> <span class="s2">&#34;</span><span class="nv">$collectionName</span><span class="s2"> Rule&#34;</span>
-</span></span><span class="line"><span class="ln">26</span><span class="cl">    
-</span></span><span class="line"><span class="ln">27</span><span class="cl">    <span class="nb">Write-Host</span> <span class="s2">&#34;Collection created: </span><span class="nv">$collectionName</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="ln">28</span><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">    <span class="vm">@</span><span class="p">{</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;Windows 10 20H2 Based&#34;</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">        <span class="n">Query</span> <span class="p">=</span> <span class="s2">&#34;select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System   where SMS_R_System.Build = &#39;10.0.19042&#39;&#34;</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">    <span class="vm">@</span><span class="p">{</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl">        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;Windows 10 21H1 Based&#34;</span>
+</span></span><span class="line"><span class="ln">19</span><span class="cl">        <span class="n">Query</span> <span class="p">=</span> <span class="s2">&#34;select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System   where SMS_R_System.Build = &#39;10.0.19043&#39;&#34;</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="ln">21</span><span class="cl">    <span class="vm">@</span><span class="p">{</span>
+</span></span><span class="line"><span class="ln">22</span><span class="cl">        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;Windows 10 21H2 Based&#34;</span>
+</span></span><span class="line"><span class="ln">23</span><span class="cl">        <span class="n">Query</span> <span class="p">=</span> <span class="s2">&#34;select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System   where SMS_R_System.Build = &#39;10.0.19044&#39;&#34;</span>
+</span></span><span class="line"><span class="ln">24</span><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="ln">25</span><span class="cl">    <span class="vm">@</span><span class="p">{</span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl">        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;Windows 10 22H2 Based&#34;</span>
+</span></span><span class="line"><span class="ln">27</span><span class="cl">        <span class="n">Query</span> <span class="p">=</span> <span class="s2">&#34;select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System   where SMS_R_System.Build = &#39;10.0.19045&#39;&#34;</span>
+</span></span><span class="line"><span class="ln">28</span><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="ln">29</span><span class="cl">    <span class="vm">@</span><span class="p">{</span>
+</span></span><span class="line"><span class="ln">30</span><span class="cl">        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;Windows Server 2012 Based&#34;</span>
+</span></span><span class="line"><span class="ln">31</span><span class="cl">        <span class="n">Query</span> <span class="p">=</span> <span class="s2">&#34;select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System where SMS_R_System.OperatingSystemNameandVersion like &#34;</span><span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> <span class="mf">6.2</span><span class="p">%</span><span class="s2">&#34;  OR SMS_R_System.OperatingSystemNameandVersion like &#34;</span><span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Advanced</span> <span class="n">Server</span> <span class="mf">6.2</span><span class="p">%</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="ln">32</span><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="ln">33</span><span class="cl">    <span class="vm">@</span><span class="p">{</span>
+</span></span><span class="line"><span class="ln">34</span><span class="cl">        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;Windows Server 2012 R2 Based&#34;</span>
+</span></span><span class="line"><span class="ln">35</span><span class="cl">        <span class="n">Query</span> <span class="p">=</span> <span class="s2">&#34;select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System where SMS_R_System.OperatingSystemNameandVersion like &#34;</span><span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Server</span> <span class="mf">6.3</span><span class="p">%</span><span class="s2">&#34;  OR SMS_R_System.OperatingSystemNameandVersion like &#34;</span><span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">NT</span> <span class="n">Advanced</span> <span class="n">Server</span> <span class="mf">6.3</span><span class="p">%</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="ln">36</span><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="ln">37</span><span class="cl">    <span class="vm">@</span><span class="p">{</span>
+</span></span><span class="line"><span class="ln">38</span><span class="cl">        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;Windows Server 2016 Standard Based&#34;</span>
+</span></span><span class="line"><span class="ln">39</span><span class="cl">        <span class="n">Query</span> <span class="p">=</span> <span class="s2">&#34;select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.Version = &#34;</span><span class="mf">10.0</span><span class="p">.</span><span class="mf">14393</span><span class="s2">&#34; and SMS_G_System_OPERATING_SYSTEM.Caption = &#34;</span><span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">Server</span> <span class="mf">2016</span> <span class="n">Standard</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="ln">40</span><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="ln">41</span><span class="cl">    <span class="vm">@</span><span class="p">{</span>
+</span></span><span class="line"><span class="ln">42</span><span class="cl">        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;Windows Server 2016 Datacenter Based&#34;</span>
+</span></span><span class="line"><span class="ln">43</span><span class="cl">        <span class="n">Query</span> <span class="p">=</span> <span class="s2">&#34;select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.Version = &#34;</span><span class="mf">10.0</span><span class="p">.</span><span class="mf">14393</span><span class="s2">&#34; and SMS_G_System_OPERATING_SYSTEM.Caption = &#34;</span><span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">Server</span> <span class="mf">2016</span> <span class="n">Datacenter</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="ln">44</span><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="ln">45</span><span class="cl">    <span class="vm">@</span><span class="p">{</span>
+</span></span><span class="line"><span class="ln">46</span><span class="cl">        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;Windows Server 2019 Standard Based&#34;</span>
+</span></span><span class="line"><span class="ln">47</span><span class="cl">        <span class="n">Query</span> <span class="p">=</span> <span class="s2">&#34;select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.Version = &#34;</span><span class="mf">10.0</span><span class="p">.</span><span class="mf">17763</span><span class="s2">&#34; and SMS_G_System_OPERATING_SYSTEM.Caption = &#34;</span><span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">Server</span> <span class="mf">2019</span> <span class="n">Standard</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="ln">48</span><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="ln">49</span><span class="cl">    <span class="vm">@</span><span class="p">{</span>
+</span></span><span class="line"><span class="ln">50</span><span class="cl">        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;Windows Server 2019 Datacenter Based&#34;</span>
+</span></span><span class="line"><span class="ln">51</span><span class="cl">        <span class="n">Query</span> <span class="p">=</span> <span class="s2">&#34;select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.Version = &#34;</span><span class="mf">10.0</span><span class="p">.</span><span class="mf">17763</span><span class="s2">&#34; and SMS_G_System_OPERATING_SYSTEM.Caption = &#34;</span><span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">Server</span> <span class="mf">2019</span> <span class="n">Datacenter</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="ln">52</span><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="ln">53</span><span class="cl">    <span class="vm">@</span><span class="p">{</span>
+</span></span><span class="line"><span class="ln">54</span><span class="cl">        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;Windows Server 2022 Standard Based&#34;</span>
+</span></span><span class="line"><span class="ln">55</span><span class="cl">        <span class="n">Query</span> <span class="p">=</span> <span class="s2">&#34;select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.Version = &#34;</span><span class="mf">10.0</span><span class="p">.</span><span class="mf">20348</span><span class="s2">&#34; and SMS_G_System_OPERATING_SYSTEM.Caption = &#34;</span><span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">Server</span> <span class="mf">2022</span> <span class="n">Standard</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="ln">56</span><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="ln">57</span><span class="cl">    <span class="vm">@</span><span class="p">{</span>
+</span></span><span class="line"><span class="ln">58</span><span class="cl">        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&#34;Windows Server 2022 Datacenter Based&#34;</span>
+</span></span><span class="line"><span class="ln">59</span><span class="cl">        <span class="n">Query</span> <span class="p">=</span> <span class="s2">&#34;select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System inner join SMS_G_System_OPERATING_SYSTEM on SMS_G_System_OPERATING_SYSTEM.ResourceID = SMS_R_System.ResourceId where SMS_G_System_OPERATING_SYSTEM.Version = &#34;</span><span class="mf">10.0</span><span class="p">.</span><span class="mf">20348</span><span class="s2">&#34; and SMS_G_System_OPERATING_SYSTEM.Caption = &#34;</span><span class="n">Microsoft</span> <span class="n">Windows</span> <span class="n">Server</span> <span class="mf">2022</span> <span class="n">Datacenter</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="ln">60</span><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="ln">61</span><span class="cl">    
+</span></span><span class="line"><span class="ln">62</span><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="ln">63</span><span class="cl">
+</span></span><span class="line"><span class="ln">64</span><span class="cl"><span class="c"># Creation of collections</span>
+</span></span><span class="line"><span class="ln">65</span><span class="cl"><span class="k">foreach</span> <span class="p">(</span><span class="nv">$collection</span> <span class="k">in</span> <span class="nv">$collections</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln">66</span><span class="cl">    <span class="nv">$collectionName</span> <span class="p">=</span> <span class="nv">$collection</span><span class="p">.</span><span class="py">Name</span>
+</span></span><span class="line"><span class="ln">67</span><span class="cl">    <span class="nv">$collectionQuery</span> <span class="p">=</span> <span class="nv">$collection</span><span class="p">.</span><span class="py">Query</span>
+</span></span><span class="line"><span class="ln">68</span><span class="cl">
+</span></span><span class="line"><span class="ln">69</span><span class="cl">    <span class="c"># Create the collection</span>
+</span></span><span class="line"><span class="ln">70</span><span class="cl">    <span class="nv">$newCollection</span> <span class="p">=</span> <span class="nb">New-CMDeviceCollection</span> <span class="n">-Name</span> <span class="nv">$collectionName</span> <span class="n">-LimitingCollection</span> <span class="s2">&#34;All Systems&#34;</span>
+</span></span><span class="line"><span class="ln">71</span><span class="cl">
+</span></span><span class="line"><span class="ln">72</span><span class="cl">    <span class="c"># Add the query rule</span>
+</span></span><span class="line"><span class="ln">73</span><span class="cl">    <span class="nb">Add-CMDeviceCollectionQueryMembershipRule</span> <span class="n">-CollectionId</span> <span class="nv">$newCollection</span><span class="p">.</span><span class="py">CollectionID</span> <span class="n">-QueryExpression</span> <span class="nv">$collectionQuery</span> <span class="n">-RuleName</span> <span class="s2">&#34;</span><span class="nv">$collectionName</span><span class="s2"> Rule&#34;</span>
+</span></span><span class="line"><span class="ln">74</span><span class="cl">    
+</span></span><span class="line"><span class="ln">75</span><span class="cl">    <span class="nb">Write-Host</span> <span class="s2">&#34;Collection created: </span><span class="nv">$collectionName</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="ln">76</span><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
     </div>
 <div class="post_comments">
