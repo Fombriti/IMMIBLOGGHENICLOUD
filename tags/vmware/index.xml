@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>VRA on IMMIBLOGGHENICLOUD</title>
-    <link>https://www.immiblogghenicloud.cloud/tags/vra/</link>
-    <description>Recent content in VRA on IMMIBLOGGHENICLOUD</description>
+    <title>VMWARE on IMMIBLOGGHENICLOUD</title>
+    <link>https://www.immiblogghenicloud.cloud/tags/vmware/</link>
+    <description>Recent content in VMWARE on IMMIBLOGGHENICLOUD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Nov 2023 12:46:49 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/tags/vra/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Nov 2023 12:46:49 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/tags/vmware/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Add a connection entry to RDM Vault on new vm deployment</title>
       <link>https://www.immiblogghenicloud.cloud/posts/add-a-connection-entry-to-rdm-vault-on-new-vm-deployment/</link>
