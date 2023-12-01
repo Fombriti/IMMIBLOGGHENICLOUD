@@ -2,57 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.immiblogghenicloud.cloud/posts/aria-automation-prices-without-price-cards/</loc>
-    <lastmod>2023-11-24T12:46:49+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://www.immiblogghenicloud.cloud/categories/</loc>
-    <lastmod>2023-11-24T12:46:49+01:00</lastmod>
+    <lastmod>2023-11-23T10:38:37+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.immiblogghenicloud.cloud/</loc>
-    <lastmod>2023-11-24T12:46:49+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/posts/</loc>
-    <lastmod>2023-11-24T12:46:49+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/tags/powershell/</loc>
-    <lastmod>2023-11-24T12:46:49+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/tags/</loc>
-    <lastmod>2023-11-24T12:46:49+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/categories/vmware/</loc>
-    <lastmod>2023-11-24T12:46:49+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/tags/vmware/</loc>
-    <lastmod>2023-11-24T12:46:49+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/tags/vra/</loc>
-    <lastmod>2023-11-24T12:46:49+01:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.immiblogghenicloud.cloud/tags/vro/</loc>
-    <lastmod>2023-11-24T12:46:49+01:00</lastmod>
+    <lastmod>2023-11-23T10:38:37+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.immiblogghenicloud.cloud/categories/microsoft/</loc>
+    <lastmod>2023-11-23T10:38:37+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/posts/</loc>
+    <lastmod>2023-11-23T10:38:37+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/tags/powershell/</loc>
     <lastmod>2023-11-23T10:38:37+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -63,6 +33,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.immiblogghenicloud.cloud/posts/sccm-collections/</loc>
+    <lastmod>2023-11-23T10:38:37+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/tags/</loc>
     <lastmod>2023-11-23T10:38:37+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -78,6 +53,26 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.immiblogghenicloud.cloud/tags/rdm/</loc>
+    <lastmod>2023-11-13T12:56:25+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/categories/vmware/</loc>
+    <lastmod>2023-11-13T12:56:25+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/tags/vmware/</loc>
+    <lastmod>2023-11-13T12:56:25+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/tags/vra/</loc>
+    <lastmod>2023-11-13T12:56:25+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/tags/vro/</loc>
     <lastmod>2023-11-13T12:56:25+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

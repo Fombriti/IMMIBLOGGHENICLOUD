@@ -6,25 +6,7 @@
     <description>Recent content in VRA on IMMIBLOGGHENICLOUD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Nov 2023 12:46:49 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/tags/vra/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Aria Automation - Prices without price cards</title>
-      <link>https://www.immiblogghenicloud.cloud/posts/aria-automation-prices-without-price-cards/</link>
-      <pubDate>Fri, 24 Nov 2023 12:46:49 +0100</pubDate>
-      
-      <guid>https://www.immiblogghenicloud.cloud/posts/aria-automation-prices-without-price-cards/</guid>
-      <description>
-        
-          
-            Intro Recentemente mi è stato richiesto di creare alcuni Blueprint e mostrare il prezzo della risorsa al momento della richiesta attraverso il service broker. Questo senza avere la possibilità di utilizzare le pricing cards di VMware Aria Automation.
-La necessità era quella di mostrare template con queste caratteristiche:
-Template Azure OS: Windows And Linux 3 Flavours: Small, Medium and Large Managed or Unamanged Machine (SLA) In case the vm is managed you have Monitoring SLA - STD or H24 Template GCP OS: Windows And Linux 3 Flavours: Small, Medium And Large Managed or Unamanged Machine (SLA) In case the vm is managed you have Monitoring SLA - STD or H24 Template vCenter Windows OS: Windows 2019 or 2022 3 Flavours: Small, Medium And Large Managed or Unamanged Machine In case the vm is managed you have Monitoring SLA - STD or H24 Il prezzo varia a seconda del Flavour, del sistema operativo, dal fatto che sia Managed o Unamanged e dal tipo di SLA in caso la vm sia managed.
-          
-          
-        
-      </description>
-    </item>
-    
+    <lastBuildDate>Mon, 13 Nov 2023 12:56:25 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/tags/vra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Add a connection entry to RDM Vault on new vm deployment</title>
       <link>https://www.immiblogghenicloud.cloud/posts/add-a-connection-entry-to-rdm-vault-on-new-vm-deployment/</link>
