@@ -6,7 +6,25 @@
     <description>Recent content in POWERSHELL on IMMIBLOGGHENICLOUD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Nov 2023 10:38:37 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aria Automation - Prices without Pricing Cards</title>
+      <link>https://www.immiblogghenicloud.cloud/posts/aria-automation-prices-without-pricing-cards/</link>
+      <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.immiblogghenicloud.cloud/posts/aria-automation-prices-without-pricing-cards/</guid>
+      <description>
+        
+          
+            Intro Recently, I was asked to create several Blueprints that would display the resource price at the time of the request through the Service Broker. This had to be accomplished without using VMware Aria Automation&#39;s Pricing Cards.
+The need was to showcase templates with these features:
+Template Azure OS: Windows And Linux 3 Flavours: Small, Medium and Large Managed or Unamanged Machine (SLA) In case the vm is managed you have Monitoring SLA - STD or H24 Template GCP OS: Windows And Linux 3 Flavours: Small, Medium And Large Managed or Unamanged Machine (SLA) In case the vm is managed you have Monitoring SLA - STD or H24 Template vCenter Windows OS: Windows 2019 or 2022 3 Flavours: Small, Medium And Large Managed or Unamanged Machine In case the vm is managed you have Monitoring SLA - STD or H24 The price varies depending on the Flavour, the operating system, whether it is Managed or Unmanaged, and the type of SLA if the VM is managed.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>SCCM collections</title>
       <link>https://www.immiblogghenicloud.cloud/posts/sccm-collections/</link>

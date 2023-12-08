@@ -376,7 +376,7 @@
   </div>
 </p>
 <h3 id="worflow">Worflow</h3>
-<p>The workflow consists of two Scriptable tasks. The first, &quot;Get Properties,&quot; retrieves the VM name and IP address from the deployment by reading the InputProperties. The second, &quot;AddSessionToRDMVault,&quot; connects to the server and creates the entry using the data retrieved from the first script.</p>
+<p>The workflow consists of two Scriptable tasks. The first, &quot;Get Properties&quot;, retrieves the VM name and IP address from the deployment by reading the InputProperties. The second, &quot;AddSessionToRDMVault&quot;, connects to the server and creates the entry using the data retrieved from the first script.</p>
 <p>As Variables and Input/Output, we have:
 <figure>
   <picture>
@@ -554,7 +554,7 @@
 </p>
 <p>In the log, many warnings of &quot;The operation has timed out.&quot; are visible. To solve this problem, on the suggestion of Devolutions support, I added the following line to the script:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">Set-RDMDatasourceProperty</span> <span class="n">-DataSource</span> <span class="nv">$ds</span> <span class="n">-Property</span> <span class="s2">&#34;Timeout&#34;</span> <span class="n">-Value</span> <span class="mf">60</span>
-</span></span></code></pre></div><p>However, this did not resolve the issue with the warnings. Nonetheless, despite the warnings, the script functions correctly, and we find our entry within RDM. Unfortunately, I couldn't find useful documentation regarding the Devolutions PowerShell module, and since I don't have much time and it works, for now, I'm simply ignoring the warning.</p>
+</span></span></code></pre></div><p>However, this did not resolve the issue with the warnings. Nonetheless, despite the warnings, the script works correctly, and we find our entry within RDM. Unfortunately, I couldn't find useful documentation regarding the Devolutions PowerShell module, and since I don't have much time and it works, for now, I'm simply ignoring the warning.</p>
 <p><figure>
   <picture>
 
@@ -645,6 +645,9 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
+        <a href="https://www.immiblogghenicloud.cloud/posts/aria-automation-prices-without-pricing-cards/" class="nav-link" title="Aria Automation - Prices without Pricing Cards">Aria Automation - Prices without Pricing Cards</a>
+      </li>
+      <li>
         <a href="https://www.immiblogghenicloud.cloud/posts/sccm-collections/" class="nav-link" title="SCCM collections">SCCM collections</a>
       </li>
       <li>
@@ -654,13 +657,13 @@
     <div>
       <h2 class="mt-4 taxonomy" id="categories-section">Categories</h2>
       <nav class="tags_nav">
-        <a href='https://www.immiblogghenicloud.cloud/categories/microsoft/' class="post_tag button button_translucent" title="microsoft">
-          MICROSOFT
-          <span class="button_tally">1</span>
-        </a>
-        
         <a href='https://www.immiblogghenicloud.cloud/categories/vmware/' class="post_tag button button_translucent" title="vmware">
           VMWARE
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://www.immiblogghenicloud.cloud/categories/microsoft/' class="post_tag button button_translucent" title="microsoft">
+          MICROSOFT
           <span class="button_tally">1</span>
         </a>
         
@@ -672,6 +675,21 @@
       <nav class="tags_nav">
         <a href='https://www.immiblogghenicloud.cloud/tags/powershell/' class="post_tag button button_translucent" title="powershell">
           POWERSHELL
+          <span class="button_tally">3</span>
+        </a>
+        
+        <a href='https://www.immiblogghenicloud.cloud/tags/vmware/' class="post_tag button button_translucent" title="vmware">
+          VMWARE
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://www.immiblogghenicloud.cloud/tags/vra/' class="post_tag button button_translucent" title="vra">
+          VRA
+          <span class="button_tally">2</span>
+        </a>
+        
+        <a href='https://www.immiblogghenicloud.cloud/tags/vro/' class="post_tag button button_translucent" title="vro">
+          VRO
           <span class="button_tally">2</span>
         </a>
         
@@ -682,21 +700,6 @@
         
         <a href='https://www.immiblogghenicloud.cloud/tags/sccm/' class="post_tag button button_translucent" title="sccm">
           SCCM
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://www.immiblogghenicloud.cloud/tags/vmware/' class="post_tag button button_translucent" title="vmware">
-          VMWARE
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://www.immiblogghenicloud.cloud/tags/vra/' class="post_tag button button_translucent" title="vra">
-          VRA
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://www.immiblogghenicloud.cloud/tags/vro/' class="post_tag button button_translucent" title="vro">
-          VRO
           <span class="button_tally">1</span>
         </a>
         
