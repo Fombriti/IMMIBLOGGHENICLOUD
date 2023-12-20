@@ -6,7 +6,25 @@
     <description>Recent content in VMWARE on IMMIBLOGGHENICLOUD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 08 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/tags/vmware/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Dec 2023 15:54:31 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/tags/vmware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add Notes in vSphere Vm - Aria Automation</title>
+      <link>https://www.immiblogghenicloud.cloud/posts/add-notes-in-vsphere-vm-aria-automation/</link>
+      <pubDate>Wed, 20 Dec 2023 15:54:31 +0100</pubDate>
+      
+      <guid>https://www.immiblogghenicloud.cloud/posts/add-notes-in-vsphere-vm-aria-automation/</guid>
+      <description>
+        
+          
+            Intro To add notes to the VM in vSphere by inserting them during the deployment request in Aria Automation, we can create an Aria Orchestrator Workflow that will allow us to modify the VM post-deploy.
+This Workflow will then be activated using the Extensibility Subscriptions of Automation, triggered by Compute Post Provisioning.
+Blueprint preparation Let&#39;s proceed by modifying our Blueprint so it accepts input notes with a field of type String.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Aria Automation - Prices without Pricing Cards</title>
       <link>https://www.immiblogghenicloud.cloud/posts/aria-automation-prices-without-pricing-cards/</link>
