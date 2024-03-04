@@ -2,37 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.immiblogghenicloud.cloud/posts/add-notes-in-vsphere-vm-aria-automation/</loc>
-    <lastmod>2023-12-20T15:54:31+01:00</lastmod>
+    <loc>https://www.immiblogghenicloud.cloud/tags/aria/</loc>
+    <lastmod>2024-03-03T16:59:58+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/posts/aria-operations-fsdb-corruption/</loc>
+    <lastmod>2024-03-03T16:59:58+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.immiblogghenicloud.cloud/categories/</loc>
-    <lastmod>2023-12-20T15:54:31+01:00</lastmod>
+    <lastmod>2024-03-03T16:59:58+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.immiblogghenicloud.cloud/</loc>
-    <lastmod>2023-12-20T15:54:31+01:00</lastmod>
+    <lastmod>2024-03-03T16:59:58+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/tags/operations/</loc>
+    <lastmod>2024-03-03T16:59:58+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.immiblogghenicloud.cloud/posts/</loc>
-    <lastmod>2023-12-20T15:54:31+01:00</lastmod>
+    <lastmod>2024-03-03T16:59:58+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.immiblogghenicloud.cloud/tags/</loc>
-    <lastmod>2023-12-20T15:54:31+01:00</lastmod>
+    <lastmod>2024-03-03T16:59:58+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/tags/troubleshooting/</loc>
+    <lastmod>2024-03-03T16:59:58+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.immiblogghenicloud.cloud/categories/vmware/</loc>
-    <lastmod>2023-12-20T15:54:31+01:00</lastmod>
+    <lastmod>2024-03-03T16:59:58+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.immiblogghenicloud.cloud/tags/vmware/</loc>
+    <lastmod>2024-03-03T16:59:58+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.immiblogghenicloud.cloud/posts/add-notes-in-vsphere-vm-aria-automation/</loc>
     <lastmod>2023-12-20T15:54:31+01:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

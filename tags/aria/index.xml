@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ARIA on IMMIBLOGGHENICLOUD</title>
+    <link>https://www.immiblogghenicloud.cloud/tags/aria/</link>
+    <description>Recent content in ARIA on IMMIBLOGGHENICLOUD</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 03 Mar 2024 16:59:58 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/tags/aria/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aria Operations - FSDB file corruption detected</title>
+      <link>https://www.immiblogghenicloud.cloud/posts/aria-operations-fsdb-corruption/</link>
+      <pubDate>Sun, 03 Mar 2024 16:59:58 +0100</pubDate>
+      
+      <guid>https://www.immiblogghenicloud.cloud/posts/aria-operations-fsdb-corruption/</guid>
+      <description>
+        
+          
+            INTRO A few days ago, while testing VMware ARIA Operations 8.14.1, I came across this alert: &amp;quot;FSDB file corruption detected.&amp;quot; Typically, this suggests potential corruption within the directory /storage/db/vcops/data/. Searching online, I found VMware&#39;s KB2126139, which advises deleting the alert and contacting support if it reoccurs. I&#39;ve decided to write this article to share some insights on the matter.
+ISSUE This message suggests potential corruption within the directory /storage/db/vcops/data/. The corruption of these files could have been caused by an unexpected poweroff, a VM crash, or the filling of the database partition.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Add Notes in vSphere Vm - Aria Automation</title>
+      <link>https://www.immiblogghenicloud.cloud/posts/add-notes-in-vsphere-vm-aria-automation/</link>
+      <pubDate>Wed, 20 Dec 2023 15:54:31 +0100</pubDate>
+      
+      <guid>https://www.immiblogghenicloud.cloud/posts/add-notes-in-vsphere-vm-aria-automation/</guid>
+      <description>
+        
+          
+            Intro To add notes to the VM in vSphere by inserting them during the deployment request in Aria Automation, we can create an Aria Orchestrator Workflow that will allow us to modify the VM post-deploy.
+This Workflow will then be activated using the Extensibility Subscriptions of Automation, triggered by Compute Post Provisioning.
+Blueprint preparation Let&#39;s proceed by modifying our Blueprint so it accepts input notes with a field of type String.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Aria Automation - Prices without Pricing Cards</title>
+      <link>https://www.immiblogghenicloud.cloud/posts/aria-automation-prices-without-pricing-cards/</link>
+      <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.immiblogghenicloud.cloud/posts/aria-automation-prices-without-pricing-cards/</guid>
+      <description>
+        
+          
+            Intro Recently, I was asked to create several Blueprints that would display the resource price at the time of the request through the Service Broker. This had to be accomplished without using VMware Aria Automation Pricing Cards.
+The need was to showcase templates with these features:
+Template Azure OS: Windows And Linux 3 Flavours: Small, Medium and Large Managed or Unamanged Machine (SLA) In case the vm is managed you have Monitoring SLA - STD or H24 Template GCP OS: Windows And Linux 3 Flavours: Small, Medium And Large Managed or Unamanged Machine (SLA) In case the vm is managed you have Monitoring SLA - STD or H24 Template vCenter Windows OS: Windows 2019 or 2022 3 Flavours: Small, Medium And Large Managed or Unamanged Machine (SLA) In case the vm is managed you have Monitoring SLA - STD or H24 The price varies depending on the Flavour, the operating system, whether it is Managed or Unmanaged, and the type of SLA if the VM is managed.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Add a connection entry to RDM Vault on new vm deployment</title>
+      <link>https://www.immiblogghenicloud.cloud/posts/add-a-connection-entry-to-rdm-vault-on-new-vm-deployment/</link>
+      <pubDate>Mon, 13 Nov 2023 12:56:25 +0100</pubDate>
+      
+      <guid>https://www.immiblogghenicloud.cloud/posts/add-a-connection-entry-to-rdm-vault-on-new-vm-deployment/</guid>
+      <description>
+        
+          
+            Remote Desktop Manager is a fantastic tool for centralized management of various accesses to VMs and services. I have personally always used RDM to save the RDP and SSH connections that I most frequently used.
+This tool, when used in conjunction with Devolutions Server (DVLS), is excellent for teams that need a centralized and common repository for access.
+Recently, I found myself in need of automating the creation of entries within the various Vaults inside DVLS to reduce the effort caused by adding them manually.
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

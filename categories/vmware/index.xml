@@ -6,7 +6,24 @@
     <description>Recent content in VMware on IMMIBLOGGHENICLOUD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Dec 2023 15:54:31 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/categories/vmware/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Mar 2024 16:59:58 +0100</lastBuildDate><atom:link href="https://www.immiblogghenicloud.cloud/categories/vmware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aria Operations - FSDB file corruption detected</title>
+      <link>https://www.immiblogghenicloud.cloud/posts/aria-operations-fsdb-corruption/</link>
+      <pubDate>Sun, 03 Mar 2024 16:59:58 +0100</pubDate>
+      
+      <guid>https://www.immiblogghenicloud.cloud/posts/aria-operations-fsdb-corruption/</guid>
+      <description>
+        
+          
+            INTRO A few days ago, while testing VMware ARIA Operations 8.14.1, I came across this alert: &amp;quot;FSDB file corruption detected.&amp;quot; Typically, this suggests potential corruption within the directory /storage/db/vcops/data/. Searching online, I found VMware&#39;s KB2126139, which advises deleting the alert and contacting support if it reoccurs. I&#39;ve decided to write this article to share some insights on the matter.
+ISSUE This message suggests potential corruption within the directory /storage/db/vcops/data/. The corruption of these files could have been caused by an unexpected poweroff, a VM crash, or the filling of the database partition.
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Add Notes in vSphere Vm - Aria Automation</title>
       <link>https://www.immiblogghenicloud.cloud/posts/add-notes-in-vsphere-vm-aria-automation/</link>
