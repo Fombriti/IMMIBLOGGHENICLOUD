@@ -216,7 +216,34 @@
   </div>
   </span>
   </div>
+<div class="post_featured"><figure>
+  <picture>
 
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=""
+      
+        class="image_figure image_featured image_internal image_unprocessed"
+        src="https://www.immiblogghenicloud.cloud/images/aria_vrops_FSDB/vrops_launchpad.png"
+      
+      
+        title="Aria Operations"
+      
+    />
+
+    <figcaption class="caption_figure caption_featured caption_internal">Aria Operations</figcaption></picture>
+</figure>
+
+      </div>
       <div class="post_toc">
         <h2>Overview</h2>
         <nav id="TableOfContents">
@@ -282,7 +309,7 @@
 </p>
 <h2 id="issue">ISSUE</h2>
 <p>This message suggests potential corruption within the directory /storage/db/vcops/data/. The corruption of these files could have been caused by an unexpected poweroff, a VM crash, or the filling of the database partition. Therefore, the first step is to ensure that the disk space of the database is not exhausted.</p>
-<p>To proceed with cleaning or expanding the disk space of Operations, you can follow the <a href="https://kb.vmware.com/s/article/2093903">KB2093903</a> and <a href="https://kb.vmware.com/s/article/2016022">KB2016022</a>.</p>
+<p>To proceed with cleaning or expanding the disk space of VMware Aria Operations, you can follow the <a href="https://kb.vmware.com/s/article/2093903">KB2093903</a> and <a href="https://kb.vmware.com/s/article/2016022">KB2016022</a>.</p>
 <p>After verifying that there is sufficient disk space, we can check for corrupted files on the filesystem. Once connected via SSH to the node with the analytics service, we can use the following command:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">find /storage/db/vcops/data/ -type f -not -regex <span class="s1">&#39;.*/[2][0][2][0-3]_[0-9][0-9]_.*.dat&#39;</span> -and ! -regex <span class="s1">&#39;.*/[2][0][1][7-9]_[0-9][0-9]_.*.dat&#39;</span> -and ! -name <span class="s1">&#39;*dtr&#39;</span> -and ! -name <span class="s1">&#39;mps_*&#39;</span>
 </span></span></code></pre></div>
@@ -295,10 +322,10 @@
   </div>
 
 <p>An example of a corrupted file name is as follows:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">/usr/lib/vmware-vcops/data/8/8584/163603858_02_8584.dat.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">/usr/lib/vmware-vcops/data/8/8584/163603858_02_8584.dat
 </span></span></code></pre></div><p>Note the future timestamp.</p>
 <p>An example of a valid file name is as follows:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">/usr/lib/vmware-vcops/data/10/10718/2020_10_10718.dat.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">/usr/lib/vmware-vcops/data/10/10718/2020_10_10718.dat
 </span></span></code></pre></div><p>Note the relatable timestamp.</p>
 <p>Let's make a note of all the names of the files that appear corrupted.</p>
 
@@ -309,14 +336,15 @@
   </div>
 
 <h2 id="resolution">RESOLUTION</h2>
-<p>After noting down the files to be deleted, we proceed by taking the cluster offline and then shutting down the nodes from the Admin UI. We create a snapshot of the powered-off VM. Immediately after powering on the VM, we log in via SSH while the cluster is still offline and proceed with the removal of the corrupted files using the rm command.</p>
+<p>After noting down the files to be deleted, we proceed by taking the cluster offline from the <a href="https://docs.vmware.com/en/VMware-Aria-Operations/8.14/Configuring-Operations/GUID-14A79597-1596-4796-8C16-67B85A75C5C3.html">Admin UI</a> and then shutting down the nodes from vCenter. We create a snapshot of the powered-off VM. Immediately after powering on the VM, we log in via SSH while the cluster is still offline and proceed with the removal of the corrupted files using the rm command.</p>
 <p>Example</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">rm /usr/lib/vmware-vcops/data/8/8584/163603858_02_8584.dat
 </span></span></code></pre></div><p>Next, we proceed by clearing the cache on all analytics nodes using the command:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">rm /usr/lib/vmware-vcops/data/cache/*.cache
 </span></span></code></pre></div><p>Now we can restart the services and verify that everything is okay. If the alert persists, it might be necessary to manually delete the alert.</p>
 <p>In some cases, the corrupted files might not be present, and simply cleaning the cache of the offline cluster nodes is sufficient.</p>
-<p>By following these steps, you can efficiently address and resolve the issue of corrupted FSDB files in VMware vRealize Operations, ensuring your analytics nodes are functioning correctly.</p>
+<p>By following these steps, you can efficiently address and resolve the issue of corrupted FSDB files in VMware Aria Operations, ensuring your analytics nodes are functioning correctly.</p>
+<p>Have you faced a similar FSDB file corruption issue in VMware ARIA Operations, or do you have any troubleshooting tips to share? I would love to hear about your experiences and any advice you might have. Please leave your thoughts and questions in the comments below, or if you found this post helpful, consider sharing it on social media. Your feedback not only helps me improve but also assists others in the community dealing with similar challenges.</p>
 
     </div>
 <div class="post_comments">
